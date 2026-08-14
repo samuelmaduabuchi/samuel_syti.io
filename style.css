@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f8ff;
+    color: #444;
+    line-height: 1.6;
+}
+
+/*NAV-FLEX DISPLAY*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001a4d;
+    /*dark navy*/
+    color: rgb(218, 204, 204);
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: rgb(241, 236, 236);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #0a0b0c;
+}
+
+/*HERO-BACKGROUND PICTURE*/
+.hero {
+    background-image: url("https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(128, 188, 216);
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(red, green, blue, alpha);
+
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: rgb(25, 86, 167);
+    text-align: center;
+}
+
+/*SECTIONS*/
+.container {
+    padding: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h1,
+h2 {
+    color: #001a4d;
+    /*dark navy for headings*/
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section {
+    background: rgb(243, 240, 240);
+    border: 2px solid #0066ff;
+    /*
+    coloured border*/
+    border-left: 6px solid #001a4d;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+
+}
+
+/*FLEX CARDS*/
+.card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    flex: 1;
+    min-width: 250px;
+    background: rgb(247, 244, 244);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-image {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}

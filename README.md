@@ -1,2 +1,2 @@
-# samuel_syti.io
-this is what i learned in three weeks
+"# samuel_syti.io" 
+"# samuel_syti.io" 
